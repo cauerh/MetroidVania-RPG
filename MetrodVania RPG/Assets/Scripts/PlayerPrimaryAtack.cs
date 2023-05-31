@@ -21,5 +21,8 @@ public class PlayerPrimaryAtack : PlayerState
     public override void Update()
     {
         base.Update();
+
+        if (triggerCalled)
+            stateMachine.ChangeState(player.idleState);
     }
 }

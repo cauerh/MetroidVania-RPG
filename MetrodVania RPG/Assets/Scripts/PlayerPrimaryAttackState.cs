@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerPrimaryAtackState : PlayerState
+public class PlayerPrimaryAttackState : PlayerState
 {
     private int comboCounter;
 
     private float lastTimeAttacked;
     private float comboWindow = 2;
 
-    public PlayerPrimaryAtackState(Player _player, PlayerStateMachine stateMachine, string _animBoolName) : base(_player, stateMachine, _animBoolName)
+    public PlayerPrimaryAttackState(Player _player, PlayerStateMachine stateMachine, string _animBoolName) : base(_player, stateMachine, _animBoolName)
     {
     }
 

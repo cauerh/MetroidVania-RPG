@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     public PlayerWallJumpState wallJump { get; private set; }
     public PlayerDashState dashState { get; private set; }
 
-    public PlayerPrimaryAtackState primaryAtack { get; private set; }
+    public PlayerPrimaryAttackState primaryAttack { get; private set; }
     #endregion
 
     private void Awake()
@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         wallSlide = new PlayerWallSlideState(this, stateMachine, "WallSlide");
         wallJump = new PlayerWallJumpState(this, stateMachine, "Jump");
 
-        primaryAtack = new PlayerPrimaryAtackState(this, stateMachine, "Attack");
+        primaryAttack = new PlayerPrimaryAttackState(this, stateMachine, "Attack");
     }
 
     private void Start()

@@ -453,6 +453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fb2f778ff1f4b45a8811ebb185b170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackDirection: {x: 0, y: 0}
+  knockbackDuration: 0
   attackCheck: {fileID: 800196724}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 511436239}
@@ -14667,6 +14669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0ba4be2d1e8eb488863f4002f0bbab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackDirection: {x: 7, y: 12}
+  knockbackDuration: 0.07
   attackCheck: {fileID: 1245482591}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 1246070580}
@@ -14676,6 +14680,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  stunDuration: 1
+  stunDirection: {x: 10, y: 12}
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
@@ -14745,7 +14751,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 12
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
